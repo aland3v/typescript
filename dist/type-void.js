@@ -1,3 +1,4 @@
+"use strict";
 // Void
 // Tipo explicito
 function showInfo(user) {
@@ -18,7 +19,7 @@ showFormattedInfo({ id: 1, username: 'quispe', firstName: 'alan' });
 // el tipo void
 // antes debemos dar "strict": false, en el tsconfig
 let unusable;
-unusable = null;
+//unusable = null; // da error en strict
 unusable = undefined;
 // Tipo: Never
 function handleError(code, message) {
