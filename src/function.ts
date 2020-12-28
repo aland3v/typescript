@@ -16,3 +16,33 @@ function createPicture2(title?: string, date?: string, size?: SquareSize) {//par
 createPicture2('My birthday', '2020-03-10', '500x500');
 createPicture2('Bolivia inc', '2020-04-20');
 createPicture2();
+
+// Flat arrow function
+let createPic = (title:string, date:string, size: SquareSize): object => {
+    /*return {
+        title: title,
+        date: date,
+        size: size
+    };*/
+    //cuando clave y valor son lo mismo:
+    return { title, date, size }
+};
+
+const picture = createPic('english seasson', '2020-03-04', '500x500');
+console.log('picture', picture);
+
+
+/**
+ * Listado de propiedades de una foto
+ *
+ * @param   {string}      title Nombre de la foto.
+ * @param   {string}      date Fecha en la que fue tomada.
+ * @param   {SquareSize}  size (Optional) Tamaño de la foto.
+ *
+ * @return  {object}
+ */
+const dataPicture = (title: string, date: string, size: SquareSize = "100x100"): object => ({
+    title,
+    date,
+    size,
+});
