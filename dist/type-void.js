@@ -1,4 +1,3 @@
-"use strict";
 // Void
 // Tipo explicito
 function showInfo(user) {

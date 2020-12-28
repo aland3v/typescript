@@ -1,4 +1,3 @@
-"use strict";
 // Explicita
 let nullVariable;
 nullVariable = null;
