@@ -1,3 +1,4 @@
+"use strict";
 // Tipo Explicito
 let users;
 users = ['pepe', 'soho', 'razi', 'lens'];

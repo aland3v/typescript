@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Void
 // Tipo explicito
 function showInfo(user) {

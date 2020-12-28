@@ -1,3 +1,4 @@
+"use strict";
 // Crear una fotografia
 /*function createPicture(title, date, size) {
     // title
@@ -56,6 +57,6 @@ try {
 catch (error) {
 }
 // Plus: funcion como parametro, => valRetorno
-function apply(items, fn) {
-    ///....
-}
+//function apply(items: number[], fn:(item: number) => number): number{
+///....
+//}

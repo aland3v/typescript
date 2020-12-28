@@ -1,3 +1,4 @@
+"use strict";
 // Type: object
 let user;
 user = {}; // Object

@@ -1,3 +1,4 @@
+"use strict";
 // Tipo explicito
 let idUser;
 idUser = 1;
