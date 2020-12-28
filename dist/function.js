@@ -55,3 +55,7 @@ try {
 }
 catch (error) {
 }
+// Plus: funcion como parametro, => valRetorno
+function apply(items, fn) {
+    ///....
+}
