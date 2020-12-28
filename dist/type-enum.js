@@ -15,3 +15,11 @@ var PhotoOrientation;
 const landscape = PhotoOrientation.Landscape;
 console.log('landscape', landscape);
 console.log('landscape', PhotoOrientation[landscape]);
+var PictureOrientation;
+(function (PictureOrientation) {
+    PictureOrientation[PictureOrientation["Landscape"] = 10] = "Landscape";
+    PictureOrientation[PictureOrientation["Portrait"] = 11] = "Portrait";
+    PictureOrientation[PictureOrientation["Square"] = 12] = "Square";
+    PictureOrientation[PictureOrientation["Panorama"] = 13] = "Panorama"; // 3
+})(PictureOrientation || (PictureOrientation = {}));
+console.log('portrait', PictureOrientation.Portrait);
