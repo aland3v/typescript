@@ -15,3 +15,12 @@ function getUserNameById(id: TypeIdUser): Username{
 
 getUserNameById(20);
 getUserNameById('20');
+
+// Tipos literales
+// 100x100, 500x500, 1000x1000
+type SquareSize = '100x100' | '500x500' | '1000x1000';
+let smallPircure: SquareSize = '100x100';
+//let smallPircure2: SquareSize = '200x200'; //error
+let mediumPicture: SquareSize = '500x500';
+console.log('mediumPicture', mediumPicture);
+

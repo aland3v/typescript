@@ -10,3 +10,7 @@ function getUserNameById(id) {
 }
 getUserNameById(20);
 getUserNameById('20');
+let smallPircure = '100x100';
+//let smallPircure2: SquareSize = '200x200'; //error
+let mediumPicture = '500x500';
+console.log('mediumPicture', mediumPicture);
