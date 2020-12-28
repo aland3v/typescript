@@ -14,10 +14,7 @@ interface Picture {
 }
 
 // funcion para mostrar photografia
-function showPicture(picture: {
-            title: string,
-            date: string,
-            orientation: PhotoOrientation}){
+function showPicture(picture: Picture){
     console.log(`[title: ${picture.title},
                     date: ${picture.date},
                     orientation: ${picture.orientation}]`);
