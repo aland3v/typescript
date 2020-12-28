@@ -12,3 +12,14 @@ console.log('message', message);
 let usernameWithId: any = 'aland3v 1';
 username = (<string>usernameWithId).substring(0,7);
 console.log('Username only', username);
+
+// Sintaxis "as"
+message = (username as string).length > 5 ?
+                     `Welcome ${username}` :
+                     `Username is too short`;
+console.log('message', message);
+
+let helloUser: any;
+helloUser = 'hello paparazzi';
+username = (helloUser as string).substring(6)
+console.log('username',username);
