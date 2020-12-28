@@ -24,3 +24,14 @@ enum PictureOrientation {
 }
 
 console.log('portrait', PictureOrientation.Portrait);
+
+enum Country {
+    Bolivia = 'bol',
+    Colombia = 'col',
+    Mexico = 'mex',
+    EEUU = 'usa',
+    Espana = 'esp'
+}
+
+const country: Country = Country.Colombia;
+console.log('country', country);

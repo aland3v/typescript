@@ -23,3 +23,13 @@ var PictureOrientation;
     PictureOrientation[PictureOrientation["Panorama"] = 13] = "Panorama"; // 3
 })(PictureOrientation || (PictureOrientation = {}));
 console.log('portrait', PictureOrientation.Portrait);
+var Country;
+(function (Country) {
+    Country["Bolivia"] = "bol";
+    Country["Colombia"] = "col";
+    Country["Mexico"] = "mex";
+    Country["EEUU"] = "usa";
+    Country["Espana"] = "esp";
+})(Country || (Country = {}));
+const country = Country.Colombia;
+console.log('country', country);
