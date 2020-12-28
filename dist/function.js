@@ -38,3 +38,20 @@ const dataPicture = (title, date, size = "100x100") => ({
     date,
     size,
 });
+// Tipo de retorno con TypeScript
+function handleError(code, message) {
+    if (message === 'error') {
+        throw new Error(`${message}. Code Error: ${code}`);
+    }
+    else {
+        return 'An error has occurred';
+    }
+}
+try {
+    let result = handleError(200, 'OK'); // return: string
+    console.log('result', result);
+    result = handleError(404, 'error'); // return: never(nunca retorna un valor valido)
+    console.log('result', result);
+}
+catch (error) {
+}
