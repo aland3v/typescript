@@ -65,3 +65,6 @@ picture.id = 100; // internamente, set id(100)
 picture.title = 'Another title';
 album.title = 'Personal Activities';
 console.log('album', album);
+// Error:
+// const item = new Item(1, 'title');
+// console.log(item);
