@@ -9,7 +9,7 @@ enum PhotoOrientation {
 
 // Superclase
 abstract class Item { // abstract no se puede instanciar
-    protected _id: number;
+    protected readonly _id: number;
     protected _title: string;
 
     constructor(id: number, title: string) {
@@ -19,10 +19,6 @@ abstract class Item { // abstract no se puede instanciar
 
     get id() {// metodo y atributo no deben tener igual identificador
         return this._id;
-    }
-
-    set id(id: number) {
-        this._id = id;
     }
 
     get title() {
@@ -37,6 +33,7 @@ abstract class Item { // abstract no se puede instanciar
 
 // get y set
 class Picture extends Item{
+    public static photoOrientation = PhotoOrientation;
     // Propiedades
     private _orientation: PhotoOrientation;
 
@@ -85,7 +82,7 @@ console.log('album', album);
 
 // Accediendo a los miembros publicos
 console.log('picture.id', picture.id); // internamente get id()
-picture.id = 100; // internamente, set id(100)
+// picture.id = 100; // internamente, set id(100)
 picture.title = 'Another title';
 album.title = 'Personal Activities';
 console.log('album', album);
@@ -93,3 +90,6 @@ console.log('album', album);
 // Error:
 // const item = new Item(1, 'title');
 // console.log(item);
+
+// Probar el miembro estatico
+console.log('PhotoOrientation', Picture.photoOrientation.Landscape);

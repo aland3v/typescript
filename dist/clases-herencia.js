@@ -16,9 +16,6 @@ class Item {
     get id() {
         return this._id;
     }
-    set id(id) {
-        this._id = id;
-    }
     get title() {
         return this._title;
     }
@@ -45,6 +42,7 @@ class Picture extends Item {
                  orientation: ${this.orientation}]`;
     }
 }
+Picture.photoOrientation = PhotoOrientation;
 class Album extends Item {
     constructor(id, title) {
         super(id, title);
@@ -61,10 +59,12 @@ album.addPicture(picture);
 console.log('album', album);
 // Accediendo a los miembros publicos
 console.log('picture.id', picture.id); // internamente get id()
-picture.id = 100; // internamente, set id(100)
+// picture.id = 100; // internamente, set id(100)
 picture.title = 'Another title';
 album.title = 'Personal Activities';
 console.log('album', album);
 // Error:
 // const item = new Item(1, 'title');
 // console.log(item);
+// Probar el miembro estatico
+console.log('PhotoOrientation', Picture.photoOrientation.Landscape);
